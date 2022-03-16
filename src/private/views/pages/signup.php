@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../public/assets/css/mediumish.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     ?>
 
     <main class="form-signin w-75 mx-auto mt-2">
-        <h1 class="text-center text-danger">Sign Up Page</h1>
+        <h1 class="text-center text-dark">Sign Up Page</h1>
         <form>
             <div class="row">
                 <label for="name" class="form-label">Name:</label>
@@ -38,7 +39,7 @@
             </div>
 
             <p id='errorMsg' class="text-danger"></p>
-            <button class="btn btn-danger p-2 w-25 mt-3 signup">Submit</button>
+            <button class="btn btn-dark p-2 w-25 mt-3 signup">Submit</button>
         </form>
 
 

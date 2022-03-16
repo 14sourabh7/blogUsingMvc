@@ -1,3 +1,1 @@
- <div class="row mt-4 mx-2 blogBody">
-
- </div>
+<div class="card-columns listfeaturedtag blogBody"></div>

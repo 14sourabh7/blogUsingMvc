@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../public/assets/css/mediumish.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -15,10 +16,10 @@
     include '../private/views/components/navbar.php';
     ?>
 
-    <main class="form-signin">
+    <main class="form-signin ">
         <form method="post" action="operation" style="width: 50%;" class="mx-auto mt-5">
 
-            <h1 class="h3 mt-3 fw-normal text-center">Please sign in</h1>
+            <h1 class="h3 mt-3 fw-normal text-center">Please <span class="btn btn-dark btn-lg">sign in</span></h1>
 
             <div class="form-floating mt-3 w-75 mx-auto">
                 <input type="email" class="form-control email" id="floatingInput" placeholder="name@example.com">
@@ -30,8 +31,8 @@
             </div>
             <p id='error' class='text-danger'></p>
             <br>
-            <a class="w-100 btn btn-lg btn-danger signin" type="submit">Sign in</a>
-            <a href="/pages/signup">Not a User? Sign Up</a>
+            <a class="w-100 btn btn-lg btn-dark signin" type="submit">Sign in</a>
+            <a href="/pages/signup" class="btn btn-lg ">Not a User? Sign Up</a>
         </form>
     </main>
 

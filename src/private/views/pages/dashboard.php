@@ -8,25 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../public/assets/css/mediumish.css" rel="stylesheet" />
 </head>
 
 <body>
 
-    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a href="/" class="text-danger navbar-brand ms-5 px-5">
+    <header class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow">
+        <a href="/" class="text-dark navbar-brand ms-5 px-5">
             <i class="fa-solid fa-shop"></i>
-            <span class="text-primary ms-2 fw-bold fs-3">The</span><span class="text-primary fw-normal fs-3">Bloggers</span>
+            <span class="text-dark ms-2 fw-bold fs-3">The</span><span class="text-dark fw-normal fs-3">Bloggers</span>
         </a>
 
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <h2 class="text-white py-2">
+        <h2 class="text-dark py-2">
             Dashboard
         </h2>
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
-                <button class="btn text-white px-3 authButton" href="#">Sign out</button>
+                <button class="btn btn-dark  px-3 authButton" href="#">Sign out</button>
             </div>
         </div>
     </header>
@@ -42,13 +43,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link users" href="#users" style="display: none">
+                            <a class="nav-link users text-secondary" href="#users" style="display: none">
                                 <span data-feather="file"></span>
                                 User Management
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link blogs" href="#blogs" style="display: none">
+                            <a class="nav-link blogs text-secondary" href="#blogs" style="display: none">
                                 <span data-feather="shopping-cart"></span>
                                 Blog Management
                             </a>
@@ -67,7 +68,7 @@
                             </div>
 
                             <div class="col-4">
-                                <a href='/pages/addNewUser' class="btn btn-success addNewUser">Add New</a>
+                                <a href='/pages/addNewUser' class="btn btn-dark addNewUser">Add New</a>
                             </div>
                         </div>
                         <div class="table-responsive mt-4">
