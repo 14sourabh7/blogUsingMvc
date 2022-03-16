@@ -397,15 +397,15 @@ $(document).ready(function () {
   // function to list no of pages in both tables
   function makePages(pages, list, filter) {
     let i = 1;
-    html = `<li class="page-item"><button class="btn nav-link prev${filter} page${filter}" href="#" data-page="1">Start</button></li>`;
+    html = `<li class="page-item"><button class="btn text-secondary nav-link prev${filter} page${filter}" href="#" data-page="1">Start</button></li>`;
 
     for (i; i <= pages; i++) {
       html += `
-        <li class="page-item"><button class="btn nav-link page${filter}" data-page="${i}" href="#">${i}</button></li>
+        <li class="page-item"><button class="btn text-secondary nav-link page${filter}" data-page="${i}" href="#">${i}</button></li>
         `;
     }
 
-    html += `<li class="page-item"><button class="btn nav-link next${filter} page${filter}" data-page="${
+    html += `<li class="page-item"><button class="btn text-secondary nav-link next${filter} page${filter}" data-page="${
       i - 1
     }" data-endpage="${i}" href="#">End</button></li>`;
     $(`.${list}`).html(html);
