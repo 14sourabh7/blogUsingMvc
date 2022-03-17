@@ -20,12 +20,16 @@ $(document).ready(function () {
           dataType: "json",
         }).done(function (data) {
           if (data.length > 0) {
-            sessionStorage.setItem("user_id", data[0].user_id);
-            sessionStorage.setItem("name", data[0].name);
-            sessionStorage.setItem("email", data[0].email);
-            sessionStorage.setItem("role", data[0].role);
-            sessionStorage.setItem("login", 1);
-            location.replace("/");
+            if (data[0].status == "approved") {
+              sessionStorage.setItem("user_id", data[0].user_id);
+              sessionStorage.setItem("name", data[0].name);
+              sessionStorage.setItem("email", data[0].email);
+              sessionStorage.setItem("role", data[0].role);
+              sessionStorage.setItem("login", 1);
+              location.replace("/");
+            } else {
+              $("#error").html("*You are not authorised");
+            }
           } else {
             $("#error").html("*Invalid Credentials");
           }
