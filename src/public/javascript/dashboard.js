@@ -243,6 +243,8 @@ $(document).ready(function () {
     console.log("clicked");
     $(".blogTitle").val("");
     $(".blogText").val("");
+    $(".blogUpdate").hide();
+    $(".blogPost").show();
   });
 
   // button listener to add blog
